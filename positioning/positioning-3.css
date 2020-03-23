@@ -1,0 +1,49 @@
+
+body {
+  font-family: "Helvetica", sans-serif;
+	font-size: 12pt;
+	color: #fff;
+
+}
+
+/* Absolute si riferisce al primo oggetto padre con position definita. 
+E se tu non metti relative sul container, si riferisce al body */
+
+.container {
+  
+  /* per centrare il box*/
+  margin: 0 auto; 
+  background-color: black;
+  width: 300px;
+  /* distanza tra contenuto visuale e pagina */
+  margin-top: 50px;
+  /* spazio tra contenuto e il bordo del box */
+  padding: 40px 80px 40px 30px;
+
+  /* se metti overflow:auto tutto f^rimane all'interno del box 
+  overflow: auto; */
+
+  position: relative;
+  z-index: 2;
+}
+
+.innerbox {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  float: left;
+  /* distanziare text e innerbox */
+  margin-right: 10px;
+}
+
+.dot {
+  position: absolute;
+	top:-25px;
+	right:-25px;
+	height: 80px;
+	width: 80px;
+	background-color: #f00;
+  border-radius: 50%;
+  z-index: 1;
+  
+}
