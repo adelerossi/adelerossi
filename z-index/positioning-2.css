@@ -1,0 +1,37 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+
+.container {
+  margin: auto;
+  background-color: #ddd;
+  overflow: auto;
+  width: 700px;
+  /* centrare il box nella pagina */
+  margin-top: 50px;
+  /* distanza testo e bordo del box*/
+  padding: 60px 30px 60px 30px;
+}
+
+.innerbox {
+  background-color: yellow;
+  width: 100px;
+  height: 200px;
+  margin: 0 15px 0 15px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+
